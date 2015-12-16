@@ -1,0 +1,84 @@
+<!-- Peer Challenge
+
+Create an array with everyone in the cohort as a different index within the array,
+Example,
+-->
+
+<!--
+Have a 'create' button loaded on the DOM when the app loads.
+-->
+<!DOCTYPE html>
+<html>
+	<head>
+		<!--Links-->
+		<link rel='stylesheet' href='Perprograming2.css'>
+
+		<!-- Scripts-->
+		<!--This order is important to load correctly or else '$' won't be defined -->
+		<script type="text/javascript" src ='jquery.min.js' ></script>
+		<script type="text/javascript" src ='Perprograming2.js'></script>
+		
+	</head>
+
+	<body>
+		<div id='container'></div>
+		<div>
+			<button>Reload</button>
+			
+		</div>
+		
+
+	</body>
+
+</html>
+
+<!--
+Each time the button is clicked, reveal 1 person from the array. 
+
+-->
+
+<!--
+Each time you click the button, you should reveal the next person in the array.
+That person should be revealed via a slideDown animation.
+
+		$("button").click(function(){
+    		$("p").slideDown();
+		});
+
+
+In addition to that person's name, also include a remove button.
+
+		$("#div1").remove();
+
+
+
+Clicking on the remove button should fire off an animation that makes the person's name fade out (in addition to the button that was clicked).
+
+
+		$("button").click(function(){
+    		$("p").fadeOut();
+		});
+
+
+
+
+If you click the 'create' button enough times, you will exhaust the list of people in it (basically, you get to the end of the array).
+
+
+When this happens, remove EVERYONE from the DOM, and start the experience over.
+					
+
+					reload()
+
+
+
+
+
+HARD MODE
+Have people appear in a 'box' that has equal width and height. The person's name should appear in the center of the box. Style however you would like to make the 'box' appear, well, 'box-like'.
+
+PRO MODE
+Use .animate to not have the person fade out completely, but down to 5%. Clicking on the button again should restore the full opacity of that person.
+
+Good luck and have fun!
+ -->
